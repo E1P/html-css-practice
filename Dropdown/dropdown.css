@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+}
+
+.nav-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 80%;
+  height: 90vh;
+  border: 2px solid rgb(255, 223, 153);
+}
+
+.nav-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 2px solid rgb(90, 212, 147);
+  width: 25%;
+  max-height: 40px;
+  font-size: 2em;
+}
+
+.nav-dropdown {
+  position: relative;
+  text-align: center;
+  border: 2px solid rgb(90, 212, 147);
+  width: 25%;
+  max-height: 40px;
+  font-size: 2em;
+}
+
+.nav-dropdown:hover {
+  color: rgb(90, 212, 147);
+}
+.nav-dropdown:hover .dropdown {
+  color: rgb(90, 212, 147);
+  opacity: 0.95;
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  top: 100%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.drop-item {
+  font-size: 4.5em;
+  background-color: yellow;
+  opacity: 0.3;
+}
+
+.drop-item:hover {
+  opacity: 1;
+}

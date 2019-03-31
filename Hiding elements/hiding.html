@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="./hiding.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <title>Hiding</title>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <button onclick="revealForm()">Open form</button>
+      <form class="form-container-hidden" id="hidden-form">
+        <div class="spacer"></div>
+        <label for="fill"></label>
+        <textarea id="fill" columns="5" rows="30" placeholder="Type here..." autofocus="true">This is a birch forest...</textarea>
+        <button>Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

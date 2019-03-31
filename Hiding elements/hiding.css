@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  font-size: 20px;
+}
+
+spacer {
+  height: 20px;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 25px auto;
+  padding: 22px;
+  text-align: center;
+  border: 2px solid rgba(128, 128, 128, 0.507);
+  border-radius: 30px;
+  overflow-y: overlay;
+  transition: border 0.5s;
+}
+
+.main-no-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 25px auto;
+  padding: 22px;
+  text-align: center;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 30px;
+  overflow-y: overlay;
+  transition: border 0.8s 0.8s;
+}
+
+button {
+  width: 10em;
+  height: 4em;
+  border-radius: 1em;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 800px;
+  border-radius: 30px;
+  margin: 10px auto;
+  padding: 0 20px;
+  text-align: right;
+  overflow: hidden;
+  transition: height 0.8s ease-in-out;
+  display: block;
+}
+
+.form-container-hidden {
+  width: 90%;
+  height: 0;
+  border-radius: 30px;
+  margin: 10px auto;
+  padding: 0 20px;
+  text-align: right;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  display: hidden;
+}
+
+textarea {
+  color: white;
+  margin: 10px;
+  font-size: 4em;
+  overflow: hidden;
+  vertical-align: top;
+  width: 100%;
+  max-height: 90%;
+  resize: none;
+  border-radius: 30px;
+  border: none;
+  background-image: url("https://www.komar.de/media/catalog/product/cache/4/image/1630dd9ade9402c050107763f906ccdc/s/h/sh043-vd4_birch_trees_web.jpg");
+  background-color: grey;
+  background-blend-mode: multiply;
+  background-attachment: scroll;
+  background-size: 1500px;
+  padding: 1em;
+}

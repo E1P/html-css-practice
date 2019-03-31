@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: space-between;
+  /* height: 95%; */
+  max-width: 95vw;
+  border: 3px solid rgb(152, 152, 251);
+  background-color: rgb(217, 247, 221);
+}
+
+.item {
+  min-height: 150px;
+  min-width: 150px;
+  background-color: rgb(253, 116, 116);
+  border: 10px solid rgb(71, 187, 255);
+  border-radius: 0;
+  transition: border 450ms ease-out, border-radius 450ms ease-out, width 450ms ease-out, height 450ms ease-out, background-color 450ms ease-out,
+    border-color 450ms ease-out;
+}
+
+.item:hover {
+  border-radius: 50%;
+  background-color: rgb(71, 187, 255);
+  border: 30px solid rgb(253, 116, 116);
+  transition: border 450ms ease-out, border-radius 450ms ease-out, width 450ms ease-out, height 450ms ease-out, background-color 450ms ease-out,
+    border-color 450ms ease-out;
+}

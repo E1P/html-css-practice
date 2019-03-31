@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+.grid-parent {
+  height: 1080px;
+  display: grid;
+  grid-template-columns: 5em 8fr 1fr;
+  grid-template-rows: 3em 4fr 2fr;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+}
+
+div {
+  padding: auto 0;
+  font-size: 50px;
+}
+
+div:hover {
+  cursor: pointer;
+}
+
+.grid-child-1 {
+  color: white;
+  background-color: aqua;
+  text-align: center;
+  grid-row: span 3;
+}
+.grid-child-2 {
+  color: white;
+  background-color: coral;
+  text-align: center;
+  grid-column: span 2;
+}
+.grid-child-3 {
+  color: white;
+  background-color: darkorange;
+  text-align: center;
+}
+.grid-child-4 {
+  color: white;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+.grid-child-5 {
+  color: white;
+  background-color: firebrick;
+  text-align: center;
+  grid-column: span 2;
+}
+.grid-child-6 {
+  color: white;
+  background-color: greenyellow;
+  text-align: center;
+}
+.grid-child-7 {
+  color: white;
+  background-color: indigo;
+  text-align: center;
+}
+.grid-child-8 {
+  color: white;
+  background-color: yellow;
+  text-align: center;
+}
+.grid-child-9 {
+  color: white;
+  background-color: teal;
+  text-align: center;
+  grid-column: span 3;
+}
+
+.delay {
+  /* font-size: 14px; */
+  /* transition-property: font-size, color; */
+  transition-duration: 0.5s;
+
+  /* transition-delay: 2s; */
+}
+
+.delay:hover {
+  transition: "font-size" color;
+  transition-duration: 2s;
+  font-size: 500px;
+  /* transition: transform 1s; */
+  /* transform: scale()  */
+  /* transform: rotate(1080deg); */
+  color: red;
+}
